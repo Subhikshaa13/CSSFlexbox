@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the world of Handloom</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #111111;
+        }
+        
+
+        header {
+            background: #a84d2f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('handloom.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(17, 17, 17, 0.5);
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero .cta {
+            padding: 10px 20px;
+            background: #121212;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px 20px;
+            background-color: #fff;
+            flex-wrap: wrap;
+        }
+
+        .service-item {
+            background-color: #a84d2f;
+            padding: 20px;
+            flex-basis: 30%;
+            margin: 10px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-item h3 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .service-item p {
+            color: #ddd;
+            margin-bottom: 15px;
+        }
+
+        .service-item .cta {
+            background-color: #74301c;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .service-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .blog-section {
+            display: flex;
+            padding: 40px 20px;
+            background-color: #ffffff;
+            flex-wrap: wrap;
+            text-align: center ;
+        }
+
+        .blog-item {
+            flex-basis: 48%;
+            margin: 10px;
+            background-color: #c3774edc;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-item h3 {
+            color: #fcf9f9;
+            margin-bottom: 10px;
+        }
+
+        .blog-item p {
+            color: #e1d6d6;
+            margin-bottom: 15px;
+        }
+
+        .blog-item .cta {
+            background-color: #b75f2c;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .call-to-action {
+            background-color: #dfe1e3;
+            color: #282626;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .call-to-action h2 {
+            margin-bottom: 10px;
+        }
+
+        .call-to-action a {
+            color: #1d1a1a;
+            padding: 10px 20px;
+            background: #c59a2e;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer { 
+            background: #aa6638;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer .footer-columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+
+        footer .footer-column {
+            flex-basis: 30%;
+            margin: 10px;
+            text-align: left;
+        }
+
+        footer h3 {
+            margin-bottom: 10px;
+            color: #101110;
+        }
+
+        footer p {
+            color: #060606;
+            margin-bottom: 10px;
+        }
+
+        footer a {
+            color: #141111;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .services, .blog-section {
+                flex-direction: column;
+            }
+
+            .service-item, .blog-item, .footer-column {
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            header nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dream Weavers</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to the world of Handloom</h1>
+            <p>From Loom to Life, Crafted with Care</p>
+            <a href="#" class="cta">Learn More</a>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="service-item">
+            <img src="kanchipuram.jpeg"width ="450px" height="300px">
+            <h3>Kanchipuram Silk saress</h3>
+            <p>Kanchipuram silk sarees are renowned for their rich texture, vibrant colors, and intricate designs. Handwoven in Tamil Nadu, these sarees feature pure silk and zari, with borders inspired by temple architecture and mythology.</p>
+            <a href="#" class="cta">Shop now</a>
+        </div>
+        <div class="service-item">
+            <img src="banarasi.png"width ="450px" height="300px">
+            <h3>Banarasi sarees</h3>
+            <p>Banarasi sarees are luxurious silk sarees from Varanasi, known for their intricate brocade work and rich textures. Adorned with gold and silver zari, these sarees are a symbol of elegance and are perfect for weddings and special occasions.</p>
+            <a href="#" class="cta">Shop now</a>
+        </div>
+        <div class="service-item">
+            <img src="chanderi.jpeg"width ="450px" height="300px">
+            <h3>Chanderi silks</h3>
+            <p>Chanderi sarees are celebrated for their lightweight, sheer fabric and intricate designs. Crafted from silk, cotton, and zari, these sarees feature elegant motifs and are perfect for festive and formal occasions, offering timeless grace and sophistication.</p>
+            <a href="#" class="cta">Shop now</a>
+        </div>
+        <div class="service-item">
+            <img src="pochampally.png"width ="450px" height="300px">
+            <h3>Pochampally Sarees</h3>
+            <p>Pochampally sarees are known for their vibrant colors and geometric patterns. Woven from silk or cotton with traditional ikat techniques, these sarees blend contemporary style with timeless craftsmanship, making them a perfect choice for both casual and special occasions.</p>
+            <a href="#" class="cta">Shop now</a>
+        </div>
+
+        <div class="service-item">
+            <img src="kalamkari.png"width ="450px" height="300px">
+            <h3>Kalamkari Sarees</h3>
+            <p>Kalamkari sarees are distinguished by their hand-painted or block-printed designs, featuring intricate motifs inspired by Indian mythology and nature. Crafted from cotton or silk, these sarees showcase traditional artistry and offer a unique blend of cultural heritage and contemporary style, ideal for festive and special occasions.</p>
+            <a href="#" class="cta">Shop now</a>
+        </div>
+        <div class="service-item">
+            <img src="silk dhoti.png"width ="450px" height="300px">
+            <h3>Silk Dhotis</h3>
+            <p> Silk dhotis are traditional garments crafted from luxurious silk, known for their elegant drape and rich texture. Often adorned with intricate borders and patterns, these dhotis are perfect for ceremonial and festive occasions, combining classic style with timeless sophistication.</p>
+            <a href="#" class="cta">Shop now</a>
+        </div>
+    </section>
+
+    <section class="blog-section">
+        <div class="blog-item">
+            <img src="shop1.png"width = "400px">
+            <h3>Chanderi Weavers</h3>
+            <p>Chanderi Weavers is a renowned store specializing in the exquisite handloom sarees of Chanderi. Known for their lightweight, sheer fabrics and intricate designs, Chanderi Weavers offers a diverse collection that showcases the traditional artistry of Madhya Pradesh. .</p>
+            <a href="#" class="cta">Read More</a>
+        </div>
+        <div class="blog-item">
+        
+            <img src="shop2.png"width = "400px"height="235px">
+            <h3>Pochampally Handlooms</h3>
+            <p>
+                Pochampally Handlooms is a distinguished store specializing in the vibrant and intricate handloom sarees of Pochampally. Renowned for their geometric ikat patterns and rich color palettes, Pochampally Handlooms offers a wide range of sarees crafted with traditional techniques.</p>
+            <a href="#" class="cta">Read More</a>
+        </div>
+        <div class="blog-item">
+            
+            <img src="shop3.png"width = "400px"height="235px">
+            <h3>A.S Babu Shah</h3></h3A></h3>
+            <p>A. Babu Shah is a prominent store known for its exquisite collection of traditional handloom sarees, including Kanchipuram and Banarasi varieties. With a reputation for quality and craftsmanship, the shop offers elegant and timeless pieces perfect for special occasions..</p>
+            <a href="#" class="cta">Read More</a>
+        </div>
+        <div class="blog-item">
+            <img src="shop4.png"width = "400px"height="235px">
+            <h3>Kalamkari Arts</h3>
+            <p>Kalamkari Arts specializes in hand-painted and block-printed sarees featuring intricate designs inspired by Indian mythology and nature. Known for its commitment to traditional artistry, the store offers unique and vibrant sarees that blend cultural heritage with contemporary style.</p>
+            <a href="#" class="cta">Read More</a>
+        </div>
+    </section>
+
+    <section class="call-to-action">
+        <h2>Call Us for Queries</h2>
+        <p>Become a part of the handloom world</p>
+        <br>
+        <a href="#">Get Started</a>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p>Email: info@flomic.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <p>&copy; 2024 Flomic Logistics Pvt. Ltd. All rights reserved.</p>
+    </footer>
+</body>
+</html>
